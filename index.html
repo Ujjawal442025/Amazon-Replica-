@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0px;
+            font-family:arial;
+            border: border-box;
+        }
+        .navbar {
+            background-color:#0f1111;
+            height:70px;
+            color:white;
+            display:flex;
+            align-items:center;
+            justify-content:space-evenly;
+        }
+        .nav-logo{
+            height:50px;
+            width:90px;
+        }
+        .logo{
+            background-image: url(https://ik.imagekit.io/ynhc9ibs2/1000069065.png?updatedAt=1752827754647);
+            height:50px;
+            background-size: cover;
+        }
+        .border{
+            border:2px solid transparent;
+        }
+        .border:hover{
+            border:2px solid white;
+            
+        }
+        /*box2*/
+        .nav-first{
+            margin-left:15px;
+            color:#cccccc;
+            font-size:0.85rem;
+        }
+        .loc{
+            display:flex;
+            align-items:center;
+        }
+        .nav2{
+            margin-left:3px;
+            font-weight:1rem;
+        }
+        /*box3*/
+
+        .tab{
+            background-color:pink;
+            width:480px;
+            display:flex;
+            justify-content:space-evenly;
+            border-radius:4px;
+            height:40px;
+        }
+        input{
+            width:100%;
+            font-size:1rem;
+            border:none;
+        }
+        select{
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+            background-color:#f3f3f3;
+            width:50px;
+            text-align:center;
+            border:none;
+        }
+        .search-icon{
+            width:40px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size:1.2rem;
+            background-color:#febd68 ;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            color:#0f1111;
+        }
+        .tab:hover{
+            border:2px solid #febd68;
+        }
+        /*box-4*/
+        span{
+            font-size:0.7rem;
+            color:#cccccc;
+        }
+        .account{
+            font-size:0.85rem;
+        }
+        /*box-5*/
+        .cart i{
+            font-size:30px;
+
+        }
+        .cart{
+            font-size:0.85rem;
+            font-weight:2000px;
+        }
+        /*panel*/
+
+        .panel{
+            background-color:#222f3d ;
+            display:flex;
+            height: 40px;
+            align-items:center;
+            justify-content: space-evenly;
+            color:white;
+        }
+        .pane p{
+            display: inline;
+            margin-left: 15px;
+            font-size: 0.9rem;
+        }
+        .pane{
+            width:90%;
+        }
+        /*hero section*/
+        .hero-sec{
+            background-image: url(https://m.media-amazon.com/images/I/81hIlE5xocL._SX3000_.jpg);
+            height:400px;
+            background-size:cover;
+            display:flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .hero2{
+            color:black;
+            background-color: white;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85rem;
+            width:95%;
+            margin-bottom: 45px;
+        }
+        .hero2 a {
+            color:#007185;
+        }
+        /*shop*/
+        .shop {
+           background-image:url(https://ik.imagekit.io/ynhc9ibs2/20250719_133812.jpg?updatedAt=1752912518124);
+           background-size:cover;
+            height: 850px;
+            display:flex;
+            justify-content:space-evenly;
+            flex-wrap:wrap;
+        }
+        .box{
+            background-color: white;
+            height:355px;
+            width:31%;
+            margin-top: 1rem;
+            margin-bottom:1rem;
+            padding:20px 0px 15px;
+
+        }
+        .boxy2{
+            background-size:cover;
+            height: 280px;
+            border-radius:4px;
+            margin-top:1rem;
+            margin-bottom: 1rem;
+        }
+        .box-cont{
+            margin-left:1rem;
+            margin-right:1rem;
+        }
+        .box-cont p{
+            color:#007185;
+        }
+        /*extraaw*/
+        .shope{
+            background-image:url(https://ik.imagekit.io/ynhc9ibs2/20250719_134439.jpg?updatedAt=1752912910012);
+            background-size:cover;
+            height:839px;
+            display:flex;
+            justify-content:space-evenly;
+            flex-wrap: wrap;
+        }
+        .extraaw{
+            background-color: white;
+            height: 285px;
+            width:95%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding:20px 0px 15px;
+        }
+        .extraaw p{
+            color:#007185;
+        }
+        .imge{
+            display:flex;
+            justify-content:space-evenly;
+        }
+        .img{
+            background-size:cover;
+            height:220px;
+            width:24%;
+            margin:10px 5px 10px 5px;
+        }
+        .extra{
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        .i{
+            height: 220px;
+            width: 400px
+        }
+        .j{
+            height:220px;
+            width:400px;
+        }
+        .foot{
+            background-color:white;
+            color:black;
+            height:100px;
+            width:95%;
+            text-align:center;
+            padding-top:9px;
+            padding-bottom:4px;
+        }
+        button{
+            background-color:#febd68;
+            color:black;
+            border-radius:30px;
+            height:35px;
+            width:14%;
+            text-align:center;
+            border:none;
+            margin-top:3px;
+            margin-bottom:3px;
+        }
+        .gg{
+            font-weight:20px;
+        }
+        .bbb{
+            color:#007185;
+        }
+        /*footer*/
+
+        .foot1{
+            background-color:#37475a;
+            color:white;
+            height:50px;
+            font-size:0.85rem;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .foot2{
+            background-color: #222f3d;
+            color:white;
+            height:330px;
+            display:flex;
+            justify-content: space-evenly;
+        }
+        ul{
+            margin-top:25px;
+            margin-bottom:25px;
+        }
+        ul a {
+            display:block;
+            font-size:0.82rem;
+            color:#DDDDDD;
+            margin-top:15px;
+        }
+        .foot3{
+            background-color: #222f3d;
+            height:70px;
+            border-top:1px solid white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .logo3{
+            background-image: url(https://ik.imagekit.io/ynhc9ibs2/1000069065.png?updatedAt=1752827754647);
+            background-size:cover;
+            height:50px;
+            width:100px;
+        }
+        .foot4{
+            background-color:#0f1111;
+            color:#DDDDDD;
+            font-size:0.8rem;
+            text-align:center;
+            height:70px;
+        }
+        .pages{
+            padding-top:15px
+        }
+        .copyright {
+            padding-top:5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+        <div class="nav-dev border">
+            <p class="nav-first">Deliver to</p>
+        <div class="loc">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class=nav2>India</p>
+        </div>
+        </div>
+
+        <div class="tab">
+            <select>
+                <option>All</option>
+            </select>
+            <input placeholder="Search Amazon">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="sign border">
+            <p><span>Hello,sign-in</span></p>
+            <div class="account">Account & Lists</div>
+        </div>        
+        <div class="sign border">
+            <p><span>Returns</span></p>
+            <div class="account">& Orders</div>
+        </div>
+
+        <div class="cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="border">
+            <i id="helio" class="fa-solid fa-bars border"></i>
+            All
+        </div>
+        <div class="pane">
+            <p class="border">Today's Deal</p>
+            <p class="border">Registry</p>
+            <p class="border">Prime Video</p>
+            <p class="border">Gift Card</p>
+            <p class="border">Customer Service</p>
+            <p class="border">Sell</p>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div class="hero-sec">
+            <div class="hero2">
+                <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.<a>Click here to go amazon.in.</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="shop">
+                <div class="box1 box">
+                    <div class="box-cont">
+                    <h2>Fashion Trends you like</h2>
+                    <div class="boxy2" style="background-image: url(https://i.pinimg.com/736x/5f/dc/5d/5fdc5dae59a2a5c6148d8e62e47bccdc.jpg);"></div>
+                    <p>Shop now</p>
+                    </div>
+                </div>
+                <div class="box2 box">
+                    <div class="box-cont">
+                        <h2>Get your Game Now</h2>
+                        <div class="boxy2" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Stores-Gaming/FinalGraphics/Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg);"></div>
+                        <p>Explore now</p>
+                    </div>
+                </div>
+                <div class="box3 box">
+                    <div class="box-cont">
+                        <h2>Home Essentials </h2>
+                        <div class="boxy2" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeStorage_2x._SY232_CB563137408_.jpg);"></div>
+                        <p>Discover more in home</p>
+                    </div>
+                </div> 
+                <div class="box4 box">
+                    <div class="box-cont">
+                        <h2>Beauty Cosmetics </h2>
+                        <div class="boxy2" style="background-image: url(https://cdn.britannica.com/35/222035-050-C68AD682/makeup-cosmetics.jpg);"></div>
+                        <p>Shop now</p>
+                    </div>
+                </div>
+                <div class="box5 box">
+                    <div class="box-cont">
+                    <h2>Shoes Vintage</h2>
+                    <div class="boxy2" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jaliMQpqMUiaW3GY6XtI-VdAXbVbENkhBw&s);"></div>
+                    <p>Shop now</p>
+                    </div>
+                </div>
+                <div class="box6 box">
+                    <div class="box-cont">
+                        <h2>Gadgets You need</h2>
+                        <div class="boxy2" style="background-image: url(https://thumbs.dreamstime.com/b/gadgets-accessories-gadgets-accessories-isolated-white-background-133429004.jpg);"></div>
+                        <p>Shop Now</p>
+                    </div>
+                </div>
+            </div>    
+            <div class="shope">
+                <div class="extraaw">
+                    <div class="extra">
+                    <h2>More Options In GAME Deals.. </h2>
+                    <div class="imge">
+                       <div class="img i" style="background-image:url(https://ik.imagekit.io/ynhc9ibs2/IMG_20250719_132403.jpg?updatedAt=1752911672451);"></div>
+                       <div class="img j" style="background-image: url(https://m.media-amazon.com/images/I/61gtdFnK+UL._AC_SY400_.jpg);"></div>
+                       <div class="img k" style="background-image: url(https://m.media-amazon.com/images/I/81mdc6bcbNL._AC_SY400_.jpg);"></div>
+                       <div class="img l" style="background-image: url(https://m.media-amazon.com/images/I/71CKb49iirL._AC_SY400_.jpg);"></div>
+                    </div>
+                    <p>Shop now</p>
+                    </div>
+                </div>
+                <div class="extraaw">
+                    <div class="extra">
+                        <h2>More Varieties Of Cosmetics 
+                        </h2>
+                        <div class="imge">
+                            <div class="img h" style="background-image: url(https://m.media-amazon.com/images/I/51Kx4Wt+VqL._AC_SY400_.jpg);"></div>
+                            <div class="img" style="background-image: url(https://m.media-amazon.com/images/I/71Mcspt-6AL._AC_SY400_.jpg);"></div>
+                            <div class="img" style="background-image: url(https://m.media-amazon.com/images/I/51dfXZZueZL._AC_SY400_.jpg);"></div>
+                            <div class="img" style="background-image: url(https://m.media-amazon.com/images/I/719IB30dOxL._AC_SY400_.jpg);"></div>
+                            <div class="img" style="background-image: url(https://m.media-amazon.com/images/I/71JxjmbExxL._AC_SY400_.jpg);"></div>
+                        </div>
+                        <p>Search fast</p>
+                    </div>
+                </div>
+            <div class="foot">
+            <h2 class="gg">See personalized recommendations</h2>
+            <button onclick="document.location='https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex'" >Sign-in</button>
+            
+            <p class="bb">New customer? <a class="bbb" href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex" target="_main"> Click here.</a></p>
+            </div>
+    </main>
+    <footer>
+        <div class="foot1">
+            Back to Top
+        </div>
+        <div class="foot2">
+            <ul>
+            <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+                <a>See More Make Money with Us</a>
+            </ul>
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a>Amazon Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Amazon and COVID 19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices Help</a>
+            </ul>
+        </div>
+        <div class="foot3">
+            <div class="logo3"></div>
+        </div>
+        <div class="foot4">
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Consumer Health Data Privacy Disclosure</a>
+                <a>Your Ads </a>
+                <a>Privacy Choices</a>
+            </div>
+            <div class="copyright">
+                © 1996-2025, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
